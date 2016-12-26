@@ -22,21 +22,19 @@ In your project base directory run
 To bring up the config file run, if you want to customize
 
 	php artisan vendor:publish
+	php artisan migrate
 	
 Then edit `config/app.php` and add the service provider within the `providers` array.
 
 	'providers' => array(
 		...
-		Dlouvard\LaravelMaintenance\MaintenanceServiceProvider::class,
+		Dlouvard\LaravelGestionmaintenance\GestionmaintenanceServiceProvider::class,
 
 <a id="usage"></a>
 ## Usage
+You can use the view _maintenance_login.blade.php for auth/login
 
 
-<a id="options"></a>
-## Options
-
-I propose a customization file for the bigupload.js send cancel function
 
 
 
