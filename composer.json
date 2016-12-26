@@ -1,5 +1,5 @@
 {
-    "name": "dlouvard/laravel-maintenance",
+    "name": "dlouvard/laravel-gestionmaintenance",
      "minimum-stability": "dev",
     "description": "Add Maintenance Gestion for Laravel 5",
     "require": {
@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-          "Dlouvard\\LaravelMaintenance\\": "src/"
+          "Dlouvard\\LaravelGestionmaintenance\\": "src/"
         }
     }
   }
