@@ -6,6 +6,14 @@
         "php": ">=5.5.9",
         "illuminate/support": "5.1.*|5.2.*"
     },
+    "keywords": [
+        "laravel",
+        "framework",
+        "maintenance",
+        "laravel maintenance",
+        "maintenance laravel",
+        "Damien Louvard"
+    ],
     "authors": [
         {
             "name": "Damien Louvard",
