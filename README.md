@@ -32,6 +32,9 @@ Then edit `config/app.php` and add the service provider within the `providers` a
 
 <a id="usage"></a>
 ## Usage
+Middleware : 
+Add `\Dlouvard\LaravelGestionmaintenance\Middleware\MaintenanceMiddleware::class` in $middlewareGroups -> 'web' in app/kernel.php
+
 You can use the view _maintenance_login.blade.php for auth/login
 
 

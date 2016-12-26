@@ -9,6 +9,7 @@ class MaintenanceMiddleware
     {
         $status = maintenance_status();
         if ($status && auth()->check()):
+            //"bican/roles": "^2.1",
             if (!can('maintenance')):
                 if ($status == 1) {
                     Auth::logout();
