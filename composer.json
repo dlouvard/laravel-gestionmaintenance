@@ -1,0 +1,19 @@
+{
+    "name": "dlouvard/laravel-maintenance",
+    "description": "Add Maintenance Gestion for Laravel 5",
+    "require": {
+        "php": "5.5.9",
+        "illuminate/support": "5.1.*|5.2.*"
+    },
+    "authors": [
+        {
+            "name": "Damien",
+            "email": "d.louvard@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "Dlouvard\\LaravelMaintenance\\": "src/"
+        }
+  },
+}
