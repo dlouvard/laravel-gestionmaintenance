@@ -1,8 +1,6 @@
 # laravel-maintenance
 Use Laravel with the plugin maintenance
 
-This repo use https://github.com/sthielen/BigUpload, you must import JS/CSS in your application.
-
 1. [Features](#features)
 2. [Installation](#installation)
 3. [Usage](#usage)
