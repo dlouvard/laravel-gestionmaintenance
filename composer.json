@@ -1,5 +1,6 @@
 {
     "name": "dlouvard/laravel-maintenance",
+     "minimum-stability": "dev",
     "description": "Add Maintenance Gestion for Laravel 5",
     "require": {
         "php": "5.5.9",
@@ -7,8 +8,8 @@
     },
     "authors": [
         {
-            "name": "Damien",
-            "email": "d.louvard@gmail.com"
+            "name": "Damien Louvard",
+            "email": "contact@damien-louvard.fr"
         }
     ],
     "autoload": {
