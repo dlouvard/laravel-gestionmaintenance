@@ -17,7 +17,7 @@ Use Laravel with the plugin maintenance
 
 In your project base directory run
 
-	composer require "dlouvard/laravel-maintenance":"master@dev"
+	composer require "dlouvard/laravel-gestionmaintenance":"master@dev"
 	
 To bring up the config file run, if you want to customize
 
