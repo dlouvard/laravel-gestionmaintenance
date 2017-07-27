@@ -13,6 +13,7 @@ class MaintenanceMiddleware
             if (!can('maintenance')):
                 if ($status == 1) {
                     Auth::logout();
+                    return redirect(action('Auth\LoginController@login'))->with('error','Maintenance activée, connexion impossible !');
                 }
             endif;
         endif;

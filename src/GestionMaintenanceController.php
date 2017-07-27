@@ -45,8 +45,8 @@ class GestionMaintenanceController extends Controller
     {
         $req = $request->all();
         $req['status'] = isset($req['status']) ? 1 : 0;
-        $req['begin'] = Carbon::createFromFormat('d/m/Y H:i', $req['begin'] . ' ' . $req['begin_clock'], 'Europe/Paris')->setTimezone('UTC');
-        $req['end'] = Carbon::createFromFormat('d/m/Y H:i', $req['end'] . ' ' . $req['end_clock'], 'Europe/Paris')->setTimezone('UTC');
+        $req['begin'] = Carbon::createFromFormat('d/m/Y H:i', $req['begin'] . ' ' . $req['begin_clock'], 'Europe/Paris');
+        $req['end'] = Carbon::createFromFormat('d/m/Y H:i', $req['end'] . ' ' . $req['end_clock'], 'Europe/Paris');
 
         $req['user_id'] = auth()->user()->id;
         if ($req['status'])
@@ -98,8 +98,8 @@ class GestionMaintenanceController extends Controller
                 ->where('id', '!=', $id)
                 ->update(['status' => 0]);
 
-        $req['begin'] = Carbon::createFromFormat('d/m/Y H:i', $req['begin'] . ' ' . $req['begin_clock'], 'Europe/Paris')->setTimezone('UTC');
-        $req['end'] = Carbon::createFromFormat('d/m/Y H:i', $req['end'] . ' ' . $req['end_clock'], 'Europe/Paris')->setTimezone('UTC');
+        $req['begin'] = Carbon::createFromFormat('d/m/Y H:i', $req['begin'] . ' ' . $req['begin_clock'], 'Europe/Paris');
+        $req['end'] = Carbon::createFromFormat('d/m/Y H:i', $req['end'] . ' ' . $req['end_clock'], 'Europe/Paris');
 
         $maintenance->update($req);
         Cache::forget('maintenance');

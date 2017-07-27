@@ -22,8 +22,6 @@ if (!function_exists('maintenance_status')) {
                 return 2;
             elseif (\Carbon\Carbon::now() >= $end):
                 if (!\Cache::has('alert_Maintenance')):
-
-
                     \Cache::put('alert_Maintenance', 1, 3600);
                 endif;
                 return 1;
