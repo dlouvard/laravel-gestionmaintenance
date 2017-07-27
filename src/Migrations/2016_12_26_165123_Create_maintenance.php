@@ -20,8 +20,8 @@ class CreateMaintenance extends Migration
                 ->onDelete('cascade');
             $table->string('title')->nullable();
             $table->text('body')->nullable();
-            $table->timestamp('begin');
-            $table->timestamp('end');
+            $table->timestamp('begin')->nullable();
+            $table->timestamp('end')->nullable();
             $table->boolean('status')->default(0);
             $table->timestamps();
         });
